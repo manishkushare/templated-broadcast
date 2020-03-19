@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ============= custom style================== */
+
+/* ----general-------- */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Baloo Chettan 2', cursive;
+
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ----header---- */
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-background {
+    background-color: #14243D;
+}
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.cite {
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* ----hero----- */
+.background-hero {
+    background: url(../media/download.jpeg) no-repeat;
+    background-size: cover;
+}
+.hero {
+    
+    text-align: center;
+    padding: 100px 0; 
+}
+.hero h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+.hero p {
+    font-size: 35px;
+    color: #D5D0DA;
+    padding: 25px 0;
+}
+.btn-hero {
+    padding: 10px 20px;
+    background-color: transparent   ;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* ----section1 ---- */
+
+.section1-background {
+    background-color: #2E3C54;
+}
+.section1 h2,
+.para1 {    
+    text-align: center;
+}
+.section1 h2 {
+    font-size: 30px;
+    color: #ffffff;
+    padding: 25px 0;
+}
+.para1 {
+    font-size: 25px;
+    color: #D5D0DA;
+    padding: 25px 0;
+}
+.flex-section1 {
+    display: flex;
+    justify-content: space-between;
+}
+.section1-col1,
+.section1-col2 {
+    width: 48%;
+}
+.section1-col1 img,
+.section1-col2 img {
+    width: 100%;
+    height: 350px;
+}
+.section1-col1 p,
+.section1-col2 p {
+color: #D5D0DA;
+font-size: 20px;
+text-align: center;
+padding: 20px 0;
+}
+
+/* -----video---- */
+
+.video {
+    background-color: #293444;
+}
+.video h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 25px 0;
+}
+.video p {
+    font-size: 30px;
+    color: #D5D0DA;
+}
+.video-col {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}
+.btn-background-pink {
+    background-color : pink;
+}
+
+.video-flex {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.flex-video-parent {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.video-image {
+    width: 100%;
+    height: 200px;
+}
+
+/* ----footer-background ---*/
+
+.footer-background {
+    background-color: #020B12;
+}
+.footer-parent {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-col {
+    width: 30%;
+}
+.footer-col h2 {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 20px 0;
+}
+.footer-col p {
+    color: #D5D0DA;
+    padding: 10px 0;
+}
+.float-icons a {
+    color: #D5D0DA;
+    
+    text-decoration: none;
+}
+.float-icons {
+    width: 100%;
+    
+    padding: 20px 0;
+    display: inline-block;
+    text-align: center;
+    
+}
+.copy {
+    color: #D5D0DA;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+hr {
+    width: 100;
+}
+
+
+@media screen and (max-width:768px) {
+    .flex-section1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .section1-col1,
+    .section1-col2 {
+        width: 100%;
+    }
+    .image-section-img {
+        width: 100%;
+    }
+    .video-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        width: 100%;
+    }
+    .btn-background-pink,
+    .btn-background,
+    .btn {
+        
+    }
+    .video-image {
+        width: 100%;
+    }
+    .video-col-i, 
+    .video-flex {
+        width: 100%;
+    }
+    .flex-video-parent {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-col {
+        width: 100%;
+    }
+    .footer-parent h2,
+    .footer-parent p {  
+        width: 100%;
+        text-align: center;
+
+    }
+}
